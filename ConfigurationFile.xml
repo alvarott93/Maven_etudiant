@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="etuddao" class="DAO.EtudiantDAO"></bean>
+<bean id="etudserv" class="Service.ServiceEcole">
+<property name="dao" ref="etuddao"></property>
+</bean>
+
+
+
+
+
+
+
+
+</beans>
